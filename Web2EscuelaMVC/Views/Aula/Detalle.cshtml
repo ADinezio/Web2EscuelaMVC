@@ -1,0 +1,36 @@
+﻿@model Web2EscuelaMVC.Models.Aula
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Detalles del aula</legend>
+        <div>
+            @Html.DisplayNameFor(model => model.Estado)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Estado)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.Numero)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Numero)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.EscuelaId)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.EscuelaId)
+        </div>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Go to index", "Index", "Aula")
+    </p>
+</body>
+</html>
